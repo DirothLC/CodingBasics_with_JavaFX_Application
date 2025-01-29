@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="250.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.HelloController">
+   <children>
+      <Text layoutX="20.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите лабораторную работу:" />
+       <Button layoutX="20.0" layoutY="47.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="54.0" text="Lab 1" />
+      <Button layoutX="20.0" layoutY="101.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="54.0" text="Lab 2" />
+   
+          <Label fx:id="welcomeText" layoutX="20.0" layoutY="143.0" />
+   </children>
+</AnchorPane>
