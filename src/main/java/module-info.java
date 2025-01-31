@@ -9,8 +9,9 @@ module kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
-    opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject to javafx.fxml;
-    exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject;
+    exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.app;
+    opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.app to javafx.fxml;
+    exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers;
+    opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers to javafx.fxml;
 }
