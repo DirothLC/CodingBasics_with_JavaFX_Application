@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/Lab2TasksController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2-tasks-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/app/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/app/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +45,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -83,7 +77,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "settings.editor.selected.configurable": "configurable.group.build",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -91,6 +85,26 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Господин\Desktop\ОК\Kutsinas Darius course project\src\main\resources\kz\kstu\kutsinas\course_project\coding_basics\codingbasicscourseproject\views" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.app.Runner" />
+      <module name="CodingBasicsCourseProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,8 +124,18 @@
       <updated>1738147032859</updated>
       <workItem from="1738246052400" duration="305000" />
       <workItem from="1738246429930" duration="149000" />
-      <workItem from="1738304250404" duration="2724000" />
+      <workItem from="1738304250404" duration="3961000" />
+      <workItem from="1738322819471" duration="1790000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
+      <option name="closed" value="true" />
+      <created>1738307804993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738307804993</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +153,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController." />
   </component>
 </project>
