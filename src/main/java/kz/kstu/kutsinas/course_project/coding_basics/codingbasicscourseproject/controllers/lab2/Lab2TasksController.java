@@ -1,4 +1,4 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab2;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class Lab2TasksController {
     @FXML
     protected void onTask1ButtonClick(){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2-task1-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2/lab2-task1-view.fxml"));
             Parent root= fxmlLoader.load();
 
             Stage stage = new Stage();

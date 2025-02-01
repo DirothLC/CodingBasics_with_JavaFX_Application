@@ -1,4 +1,4 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;

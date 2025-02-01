@@ -21,7 +21,7 @@ public class IntroController {
     protected void onLab2ButtonClick() {
         try {
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2-tasks-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2/lab2-tasks-view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
