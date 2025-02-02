@@ -1,4 +1,4 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.utils;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +21,7 @@ public class Formulas {
     }
 
     public static String compareEfficiency(String input, String encodedText) {
-        int originalSize = input.length() * 16;
+        int originalSize = input.length() * 8;
         int compressedSize = encodedText.length();
 
         String result = String.format(

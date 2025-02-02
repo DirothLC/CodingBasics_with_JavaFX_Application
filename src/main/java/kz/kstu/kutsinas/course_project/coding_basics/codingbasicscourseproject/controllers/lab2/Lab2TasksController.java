@@ -26,4 +26,21 @@ public class Lab2TasksController {
             System.err.println("Ошибка в загрузке окна: " + e.getMessage());
         }
     }
+
+    @FXML
+    protected void onTask2ButtonClick(){
+        try{
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2/lab2-task2-view.fxml"));
+            Parent root =fxmlLoader.load();
+
+            Stage stage = new Stage();
+            stage.setTitle("Кодирование Шеннона-Фано");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        }catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Ошибка в загрузке окна: " + e.getMessage());
+        }
+    }
 }

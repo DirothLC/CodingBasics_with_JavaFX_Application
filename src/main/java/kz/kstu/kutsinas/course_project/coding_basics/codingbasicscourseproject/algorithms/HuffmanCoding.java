@@ -1,4 +1,4 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.utils;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms;
 
 
 import java.util.Comparator;

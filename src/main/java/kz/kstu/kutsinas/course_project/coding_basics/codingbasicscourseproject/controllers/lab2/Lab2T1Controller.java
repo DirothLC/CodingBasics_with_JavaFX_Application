@@ -3,7 +3,7 @@ package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.utils.Logic;
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.Logic;
 
 public class Lab2T1Controller {
     @FXML
