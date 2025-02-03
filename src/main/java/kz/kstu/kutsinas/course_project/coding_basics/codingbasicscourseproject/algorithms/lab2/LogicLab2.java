@@ -1,14 +1,16 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab2;
+
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.Formulas;
 
 import java.util.Arrays;
 import java.util.Map;
 
-public class Logic {
+public class LogicLab2 {
     public static String Lab2T1Logic(String str){
         String result;
-        Map<Character,Double> probs=Formulas.calculateProbs(str);
+        Map<Character,Double> probs= Formulas.calculateProbs(str);
         result="Дерево вероятностей:\n"+probs+"\n";
-        String code=HuffmanCoding.encodeWithHuffman(probs,str);
+        String code= HuffmanCoding.encodeWithHuffman(probs,str);
         result+=code+"\n";
 
         result+="Сравнение эффективности кодирования:\n"+Formulas.compareEfficiency(str,code );
@@ -53,7 +55,7 @@ public class Logic {
         result+="Восстановленный массив:\n"+Arrays.deepToString(encodedData)+"\n";
 
         boolean isCorrect = ReedSolomonCoding.compareData(original, encodedData);
-        result+="Данные восстановлены корректно: "+isCorrect;
+        result+="Данные восстановлены корректно: "+isCorrect+"\n";
         result+="Восстановленное сообщение:\n"+input;
         return result;
 

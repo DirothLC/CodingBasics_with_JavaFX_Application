@@ -3,7 +3,7 @@ package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.Logic;
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab2.LogicLab2;
 
 public class Lab2T2Controller {
     @FXML
@@ -14,7 +14,7 @@ public class Lab2T2Controller {
 
     @FXML
     protected void onButtonRunClick(){
-        String answer= Logic.Lab2T2Logic(input.getText());
+        String answer= LogicLab2.Lab2T2Logic(input.getText());
         result.setText(answer);
 
     }

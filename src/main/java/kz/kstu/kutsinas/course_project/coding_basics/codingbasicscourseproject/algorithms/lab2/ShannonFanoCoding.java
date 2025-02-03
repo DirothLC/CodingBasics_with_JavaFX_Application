@@ -1,4 +1,4 @@
-package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms;
+package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
