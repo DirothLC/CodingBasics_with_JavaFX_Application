@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.ReedSolomonCoding;
 
 import java.io.IOException;
 
@@ -19,5 +20,6 @@ public class Runner extends Application {
 
     public static void main(String[] args) {
         launch();
+
     }
 }

@@ -74,9 +74,6 @@ public class ShannonFanoCoding {
 
     }
 
-
-
-
     public static String encode(String input, Map<Character, String> codes) {
         StringBuilder encoded = new StringBuilder();
         for (char c : input.toCharArray()) {

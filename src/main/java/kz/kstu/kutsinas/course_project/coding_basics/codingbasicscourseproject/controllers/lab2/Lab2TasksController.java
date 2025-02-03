@@ -43,4 +43,22 @@ public class Lab2TasksController {
             System.err.println("Ошибка в загрузке окна: " + e.getMessage());
         }
     }
+    @FXML
+    protected void onTask3ButtonClick() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab2/lab2-task3-view.fxml"));
+            Parent root = fxmlLoader.load();
+
+            Stage stage = new Stage();
+            stage.setTitle("Блоковое кодирование с использованием кодов Рида-Соломона");
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Ошибка в загрузке окна: " + e.getMessage());
+        }
+    }
+
 }

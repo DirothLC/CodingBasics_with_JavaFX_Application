@@ -9,7 +9,7 @@
    <children>
       <Button layoutX="84.0" layoutY="84.0" onAction="#onTask1ButtonClick" prefHeight="26.0" prefWidth="438.0" text="Задание 1: Кодирование с использованием алгоритма Хаффмана" />
       <Button layoutX="84.0" layoutY="116.0" onAction="#onTask2ButtonClick" prefHeight="26.0" prefWidth="438.0" text="Задание 2: Применение алгоритма Шеннона-Фано для кодирования" />
-      <Button layoutX="84.0" layoutY="150.0" mnemonicParsing="false" text="Задание 3: Блоковое кодирование с использованием кодов Рида-Соломона" />
+      <Button layoutX="84.0" layoutY="150.0" onAction="#onTask3ButtonClick" text="Задание 3: Блоковое кодирование с использованием кодов Рида-Соломона" />
       <Text layoutX="251.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите задание:" />
    </children>
 </AnchorPane>
