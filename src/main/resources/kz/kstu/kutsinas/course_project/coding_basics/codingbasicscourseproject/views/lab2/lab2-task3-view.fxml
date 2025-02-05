@@ -8,9 +8,10 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab2.Lab2T3Controller">
     <children>
-        <TextField fx:id="input" layoutX="112.0" layoutY="23.0" prefHeight="26.0" prefWidth="402.0" />
+        <TextField fx:id="input" layoutX="112.0" layoutY="23.0" prefHeight="26.0" prefWidth="318.0" />
         <TextArea fx:id="result" editable="false" layoutX="12.0" layoutY="86.0" prefHeight="302.0" prefWidth="576.0" promptText="Здесь отобразится результат" />
-        <Button layoutX="514.0" layoutY="23.0" onAction="#onButtonRunClick" text="Выполнить" />
+        <Button fx:id="clear" layoutX="509.0" layoutY="23.0" mnemonicParsing="false" onAction="#onClearButtonClick" prefHeight="26.0" prefWidth="78.0" text="Очистить" />
+        <Button layoutX="430.0" layoutY="23.0" onAction="#onButtonRunClick" prefHeight="26.0" prefWidth="78.0" text="Выполнить" />
       <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите строку:" />
     </children>
 

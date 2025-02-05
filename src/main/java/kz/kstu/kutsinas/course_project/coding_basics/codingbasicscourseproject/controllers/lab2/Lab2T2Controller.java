@@ -18,4 +18,9 @@ public class Lab2T2Controller {
         result.setText(answer);
 
     }
+    @FXML
+    protected void onClearButtonClick() {
+        input.clear();
+        result.clear();
+    }
 }

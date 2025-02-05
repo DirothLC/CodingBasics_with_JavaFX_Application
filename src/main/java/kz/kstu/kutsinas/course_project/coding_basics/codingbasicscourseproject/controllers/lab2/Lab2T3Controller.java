@@ -16,6 +16,11 @@ public class Lab2T3Controller {
     protected void onButtonRunClick(){
         String answer= LogicLab2.Lab2T3Logic(input.getText());
         result.setText(answer);
+    }
 
+    @FXML
+    protected void onClearButtonClick() {
+        input.clear();
+        result.clear();
     }
 }
