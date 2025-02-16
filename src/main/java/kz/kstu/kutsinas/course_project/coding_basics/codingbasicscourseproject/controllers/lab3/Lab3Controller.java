@@ -3,8 +3,13 @@ package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.TextField;
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab3.Lab3Logic;
 
 public class Lab3Controller {
+
+    public Lab3Controller() {
+    }
+
     @FXML
     private TextField frequencyInput;
 
@@ -21,7 +26,23 @@ public class Lab3Controller {
     private LineChart<Number,Number> restoredGraph;
 
     @FXML
-    protected void onButtonRunClick(){}
+    protected void onButtonRunClick(){
+        double frequency = Double.parseDouble(frequencyInput.getText());
+        double noise = Double.parseDouble(noiseInput.getText());
+
+        var initialSignal = Lab3Logic.generateInitialSignal(frequency);
+        var distortedSignal = Lab3Logic.generateDistortedSignal(initialSignal, noise);
+        var restoredSignal = Lab3Logic.generateRestoredSignal(distortedSignal);
+
+        initialGraph.getData().clear();
+        initialGraph.getData().add(initialSignal);
+
+        distortedGraph.getData().clear();
+        distortedGraph.getData().add(distortedSignal);
+
+        restoredGraph.getData().clear();
+        restoredGraph.getData().add(restoredSignal);
+    }
 
     @FXML
     protected void onButtonClearClick(){

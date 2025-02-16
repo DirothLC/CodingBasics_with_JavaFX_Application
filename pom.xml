@@ -13,7 +13,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.0</junit.version>
     </properties>
-
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -101,7 +106,11 @@
             <version>3.6.1</version>
 
         </dependency>
-
+        <dependency>
+            <groupId>com.github.psambit9791</groupId>
+            <artifactId>jdsp</artifactId>
+            <version>3.1.0</version>
+        </dependency>
 
     </dependencies>
 

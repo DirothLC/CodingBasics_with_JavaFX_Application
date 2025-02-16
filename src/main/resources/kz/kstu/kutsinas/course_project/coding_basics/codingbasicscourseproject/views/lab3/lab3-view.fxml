@@ -19,7 +19,7 @@
       <Button layoutX="614.0" layoutY="42.0" mnemonicParsing="false" onAction="#onButtonClearClick" prefHeight="26.0" prefWidth="77.0" text="Очистить" />
       <LineChart fx:id="initialGraph" layoutX="14.0" layoutY="101.0" prefHeight="214.0" prefWidth="253.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <NumberAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
           <NumberAxis side="LEFT" />
@@ -27,7 +27,7 @@
       </LineChart>
       <LineChart fx:id="distortedGraph" layoutX="280.0" layoutY="101.0" prefHeight="214.0" prefWidth="253.0">
          <xAxis>
-            <CategoryAxis side="BOTTOM" />
+            <NumberAxis side="BOTTOM" />
          </xAxis>
          <yAxis>
             <NumberAxis side="LEFT" />
@@ -35,7 +35,7 @@
       </LineChart>
       <LineChart fx:id="restoredGraph" layoutX="547.0" layoutY="101.0" prefHeight="214.0" prefWidth="253.0">
          <xAxis>
-            <CategoryAxis side="BOTTOM" />
+            <NumberAxis side="BOTTOM" />
          </xAxis>
          <yAxis>
             <NumberAxis side="LEFT" />

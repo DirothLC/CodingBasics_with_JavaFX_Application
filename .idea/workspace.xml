@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Added button Clear in Lab 2 tasks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab3/Lab3Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab3/lab3-view.fxml" afterDir="false" />
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Added Lab 3 view&#10;Added Lab 3 Controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab3/ChebyshevFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab3/Lab3Logic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab3/NoiseAdder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab3/SignalGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab3/Lab3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab3/Lab3Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab3/lab3-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab3/lab3-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +52,11 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="generatedSourcesFolder" value="GENERATED_SOURCE_FOLDER" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -62,6 +76,8 @@
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
     "Application.Runner.executor": "Run",
+    "Maven.CodingBasicsCourseProject [clean].executor": "Run",
+    "Maven.CodingBasicsCourseProject [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -74,10 +90,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -137,7 +153,9 @@
       <workItem from="1738564127458" duration="3042000" />
       <workItem from="1738578127620" duration="2985000" />
       <workItem from="1738750386385" duration="2214000" />
-      <workItem from="1739355376312" duration="2400000" />
+      <workItem from="1739355376312" duration="5377000" />
+      <workItem from="1739513975510" duration="3661000" />
+      <workItem from="1739685108783" duration="4458000" />
     </task>
     <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <option name="closed" value="true" />
@@ -211,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738752233117</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Lab 3 view&#10;Added Lab 3 Controller">
+      <option name="closed" value="true" />
+      <created>1739358117499</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739358117499</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +264,11 @@
     <MESSAGE value="Lab 2 done" />
     <MESSAGE value="Added lab2 package&#10;Refactoring" />
     <MESSAGE value="Added button Clear in Lab 2 tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button Clear in Lab 2 tasks" />
+    <MESSAGE value="Added Lab 3 view&#10;Added Lab 3 Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lab 3 view&#10;Added Lab 3 Controller" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
