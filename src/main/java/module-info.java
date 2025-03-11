@@ -20,4 +20,6 @@ module kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject {
     opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab2 to javafx.fxml;
     exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab3;
     opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab3 to javafx.fxml;
+    exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab4;
+    opens kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab4 to javafx.fxml;
 }
