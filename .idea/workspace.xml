@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Charts view management">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab4/Lab4Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/utils/WindowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml" afterDir="false" />
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab2/Lab2TasksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab2/Lab2TasksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab4/Lab4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab4/Lab4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +157,10 @@
       <workItem from="1740128118656" duration="631000" />
       <workItem from="1740994042263" duration="46000" />
       <workItem from="1741328944880" duration="30000" />
-      <workItem from="1741682605038" duration="1637000" />
+      <workItem from="1741682605038" duration="4250000" />
+      <workItem from="1741710439857" duration="139000" />
+      <workItem from="1741767073289" duration="654000" />
+      <workItem from="1741771982327" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <option name="closed" value="true" />
@@ -259,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739692995915</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods">
+      <option name="closed" value="true" />
+      <created>1741684404066</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741684404066</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +296,8 @@
     <MESSAGE value="Added Lab 3 view&#10;Added Lab 3 Controller" />
     <MESSAGE value="import JDSP library&#10;added Lab3 controller in module&#10;complete ChebyshevFilter&#10;Lab 3 tested launch" />
     <MESSAGE value="Charts view management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Charts view management" />
+    <MESSAGE value="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
