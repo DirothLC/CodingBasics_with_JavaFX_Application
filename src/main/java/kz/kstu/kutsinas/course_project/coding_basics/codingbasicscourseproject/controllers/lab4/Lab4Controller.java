@@ -30,6 +30,10 @@ public class Lab4Controller {
     private RadioButton codingMark;
     @FXML
     private RadioButton decodingMark;
+    @FXML
+    private RadioButton txtFormatMark;
+    @FXML
+    private RadioButton logFormatMark;
 
     @FXML
     private TextArea outputArea;
@@ -45,7 +49,7 @@ public class Lab4Controller {
     private void onFileChooseButtonClick() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Выберите файл");
-
+        fileChooser.setInitialDirectory(new File("src/main/resources/static/working_with_files").getAbsoluteFile());
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Text Files (*.txt)", "*.txt"),
                 new FileChooser.ExtensionFilter("Log Files (*.log)", "*.log"),
@@ -91,7 +95,20 @@ public class Lab4Controller {
 
 
         File inputFile = new File(inputFilePath);
-        File outputFile = new File(outputFolderPath, outputFileName + ".bin");
+        String outputFileExtension = ".bin";
+        if (decodingMark.isSelected()) {
+            if (txtFormatMark.isSelected()) {
+                outputFileExtension = ".txt";
+            } else if (logFormatMark.isSelected()) {
+                outputFileExtension = ".log";
+            }
+        }
+        File outputFile = new File(outputFolderPath, outputFileName + outputFileExtension);
+
+        if (!inputFile.exists()) {
+            outputArea.setText("Исходный файл не существует: " + inputFilePath);
+            return;
+        }
 
         RLECodingAlgorithm rleCodingAlgorithm = new RLECodingAlgorithm();
 
@@ -113,5 +130,26 @@ public class Lab4Controller {
         } catch (IOException e) {
             outputArea.setText("Произошла ошибка: " + e.getMessage());
         }
+    }
+
+    @FXML
+    private void onCodingMarkSelected() {
+       txtFormatMark.disableProperty().set(true);
+       logFormatMark.disableProperty().set(true);
+       txtFormatMark.selectedProperty().set(false);
+       logFormatMark.selectedProperty().set(false);
+    }
+    @FXML
+    private void onDecodingMarkSelected() {
+        txtFormatMark.disableProperty().set(false);
+        logFormatMark.disableProperty().set(false);
+        txtFormatMark.selectedProperty().set(true);
+    }
+    @FXML
+    private void onClearButtonClick(){
+        outputArea.clear();
+        filePath.clear();
+        fileName.clear();
+
     }
 }

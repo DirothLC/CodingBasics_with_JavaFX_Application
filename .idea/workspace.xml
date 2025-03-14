@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" afterDir="false" />
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="RLE algorithm developed&#10;Lab 4 logic developed&#10;Initial tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab4/Lab4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab4/Lab4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/intro-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,12 +88,13 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Господин\Desktop\ОК\Kutsinas Darius course project\src\main\resources\static\working_with_files" />
       <recent name="C:\Users\Господин\Desktop\ОК\Kutsinas Darius course project\src\main\resources\kz\kstu\kutsinas\course_project\coding_basics\codingbasicscourseproject\views\lab2" />
       <recent name="C:\Users\Господин\Desktop\ОК\Kutsinas Darius course project\src\main\resources\kz\kstu\kutsinas\course_project\coding_basics\codingbasicscourseproject\views" />
     </key>
@@ -160,7 +162,11 @@
       <workItem from="1741682605038" duration="4250000" />
       <workItem from="1741710439857" duration="139000" />
       <workItem from="1741767073289" duration="654000" />
-      <workItem from="1741771982327" duration="2358000" />
+      <workItem from="1741771982327" duration="6515000" />
+      <workItem from="1741860005620" duration="65000" />
+      <workItem from="1741927965033" duration="4054000" />
+      <workItem from="1741935271914" duration="2664000" />
+      <workItem from="1741952776510" duration="2971000" />
     </task>
     <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <option name="closed" value="true" />
@@ -266,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741684404066</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="RLE algorithm developed&#10;Lab 4 logic developed&#10;Initial tests">
+      <option name="closed" value="true" />
+      <created>1741775340916</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741775340916</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +311,8 @@
     <MESSAGE value="import JDSP library&#10;added Lab3 controller in module&#10;complete ChebyshevFilter&#10;Lab 3 tested launch" />
     <MESSAGE value="Charts view management" />
     <MESSAGE value="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods" />
+    <MESSAGE value="RLE algorithm developed&#10;Lab 4 logic developed&#10;Initial tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="RLE algorithm developed&#10;Lab 4 logic developed&#10;Initial tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,30 +1,40 @@
 package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab4;
 
 import java.io.*;
+import java.util.Random;
 
 public class RLECodingAlgorithm {
     public void encodeFile(File inputFile, File outputFile) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
 
-            int count;
-            char currentChar, previousChar = (char) -1;
-
-            while ((count = reader.read()) != -1) {
-                currentChar = (char) count;
-                int runLength = 1;
-
-                while ((count = reader.read()) != -1 && currentChar == (char) count) {
-                    runLength++;
-                }
-
-                writer.write(currentChar);
-                writer.write(Integer.toString(runLength));
-
-                if (count != -1) {
-                    currentChar = (char) count;
-                }
+            StringBuilder inputString = new StringBuilder();
+            for(String line; (line = reader.readLine()) != null; ) {
+                inputString.append(line);
+               // inputString.append("\n");
             }
+            for(int i=0;i<inputString.length();i++){
+                char currentChar= inputString.charAt(i);
+                char nextChar='\uFFFF';
+                if(i<inputString.length()-1){
+                nextChar = inputString.charAt(i+1);
+                }
+                int count=1;
+                while (currentChar == nextChar) {
+                    count++;
+                    i++;
+                    if(i<inputString.length()-1){
+                        nextChar = inputString.charAt(i+1);
+                    }
+                    else{
+                        break;
+                    }
+                }
+                writer.write(currentChar);
+                writer.write(String.valueOf(count));
+
+            }
+
         }
 
     }
@@ -33,20 +43,38 @@ public class RLECodingAlgorithm {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
 
-            int count;
-            while ((count = reader.read()) != -1) {
-                char currentChar = (char) count;
-                StringBuilder runLengthStr = new StringBuilder();
+            StringBuilder inputString = new StringBuilder();
+            for(String line; (line = reader.readLine()) != null; ) {
+                inputString.append(line);
+            }
 
-                while ((count = reader.read()) != -1 && Character.isDigit((char) count)) {
-                    runLengthStr.append((char) count);
-                }
-
-                int runLength = Integer.parseInt(runLengthStr.toString());
-                for (int i = 0; i < runLength; i++) {
+            for(int i=0; i<inputString.length();i+=2){
+                int count;
+                char currentChar = inputString.charAt(i);
+                count=(int)inputString.charAt(i+1)-48;
+                for(int j=0;j<count;j++){
                     writer.write(currentChar);
                 }
             }
+
+        }
+    }
+    public static void fileGenerator(){
+        File outputFile = new File("200kbThird.txt");
+        int fileSizeInKB = 200;
+        int fileSizeInBytes = fileSizeInKB * 1024;
+        char[] charSet = {'a', 'b'};
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+            Random random = new Random();
+            for (int i = 0; i < fileSizeInBytes; i++) {
+                char randomChar = charSet[random.nextInt(charSet.length)];
+                writer.write(randomChar);
+            }
+            System.out.println("Файл успешно создан: " + outputFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
+

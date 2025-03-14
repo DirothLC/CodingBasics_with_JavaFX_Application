@@ -13,14 +13,21 @@
       <TextField fx:id="folderPath" editable="false" layoutX="23.0" layoutY="46.0" prefHeight="26.0" prefWidth="370.0" />
       <Button fx:id="chooseFileButton" layoutX="398.0" layoutY="13.0" mnemonicParsing="false" onAction="#onFileChooseButtonClick" prefHeight="26.0" prefWidth="187.0" text="Выберите исходный файл" />
       <Button fx:id="chooseSaveFolderButton" layoutX="398.0" layoutY="46.0" mnemonicParsing="false" onAction="#onSaveFolderButtonClick" text="Укажите папку для сохранения" />
-      <RadioButton fx:id="codingMark" layoutX="23.0" layoutY="82.0" mnemonicParsing="false" selected="true" text="Кодирование">
+      <RadioButton fx:id="codingMark" layoutX="23.0" layoutY="82.0" mnemonicParsing="false" onAction="#onCodingMarkSelected" selected="true" text="Кодирование">
          <toggleGroup>
             <ToggleGroup fx:id="operatingMode" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="decodingMark" layoutX="135.0" layoutY="82.0" mnemonicParsing="false" text="Декодирование" toggleGroup="$operatingMode" />
+      <RadioButton fx:id="decodingMark" layoutX="135.0" layoutY="82.0" mnemonicParsing="false" onAction="#onDecodingMarkSelected" text="Декодирование" toggleGroup="$operatingMode" />
       <TextField fx:id="fileName" layoutX="398.0" layoutY="78.0" prefHeight="26.0" prefWidth="187.0" promptText="Имя файла (для сохранения)" />
-      <TextArea fx:id="outputArea" layoutX="18.0" layoutY="130.0" prefHeight="220.0" prefWidth="563.0" />
+      <TextArea fx:id="outputArea" editable="false" layoutX="18.0" layoutY="130.0" prefHeight="220.0" prefWidth="563.0" />
       <Button layoutX="261.0" layoutY="360.0" mnemonicParsing="false" onAction="#onRunButtonClick" text="Выполнить" />
+      <RadioButton fx:id="txtFormatMark" disable="true" layoutX="398.0" layoutY="104.0" mnemonicParsing="false" text=".txt">
+         <toggleGroup>
+            <ToggleGroup fx:id="decodeFormat" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="logFormatMark" disable="true" layoutX="450.0" layoutY="104.0" mnemonicParsing="false" text=".log" toggleGroup="$decodeFormat" />
+      <Button layoutX="513.0" layoutY="130.0" mnemonicParsing="false" onAction="#onClearButtonClick" text="Очистить" />
    </children>
 </AnchorPane>
