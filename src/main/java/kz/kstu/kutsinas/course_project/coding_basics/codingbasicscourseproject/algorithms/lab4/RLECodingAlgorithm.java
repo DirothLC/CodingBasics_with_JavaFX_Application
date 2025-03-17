@@ -31,7 +31,8 @@ public class RLECodingAlgorithm {
                     }
                 }
                 writer.write(currentChar);
-                writer.write(String.valueOf(count));
+
+                if(count>1)writer.write(String.valueOf(count));
 
             }
 
@@ -48,10 +49,16 @@ public class RLECodingAlgorithm {
                 inputString.append(line);
             }
 
-            for(int i=0; i<inputString.length();i+=2){
-                int count;
+            for(int i=0; i<inputString.length();i++){
+                int count=1;
                 char currentChar = inputString.charAt(i);
-                count=(int)inputString.charAt(i+1)-48;
+                if(Character.isDigit(currentChar))continue;
+                if(i<inputString.length()-1){
+                    char nextChar= inputString.charAt(i+1);
+                    if(Character.isDigit(nextChar)){
+                        count=Character.getNumericValue(nextChar);
+                    }
+                }
                 for(int j=0;j<count;j++){
                     writer.write(currentChar);
                 }
