@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="RLE algorithm refactored&#10;Lab 4 developed">
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Editing in the RLE algorithm, the work of the program is adjusted">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab5/Lab5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab5/lab5-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/RLECodingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -166,7 +169,10 @@
       <workItem from="1741952776510" duration="3167000" />
       <workItem from="1742028493144" duration="1809000" />
       <workItem from="1742192698908" duration="670000" />
-      <workItem from="1742201133685" duration="3648000" />
+      <workItem from="1742201133685" duration="3855000" />
+      <workItem from="1742206195483" duration="1006000" />
+      <workItem from="1742374230495" duration="17000" />
+      <workItem from="1743585891949" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <option name="closed" value="true" />
@@ -288,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741957814626</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Editing in the RLE algorithm, the work of the program is adjusted">
+      <option name="closed" value="true" />
+      <created>1742205001983</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742205001983</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +335,8 @@
     <MESSAGE value="Added utils package&#10;Added WindowManager utility class&#10;Added Lab4 controller and view (empty)&#10;Refactoring with WindowManager methods" />
     <MESSAGE value="RLE algorithm developed&#10;Lab 4 logic developed&#10;Initial tests" />
     <MESSAGE value="RLE algorithm refactored&#10;Lab 4 developed" />
-    <option name="LAST_COMMIT_MESSAGE" value="RLE algorithm refactored&#10;Lab 4 developed" />
+    <MESSAGE value="Editing in the RLE algorithm, the work of the program is adjusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing in the RLE algorithm, the work of the program is adjusted" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

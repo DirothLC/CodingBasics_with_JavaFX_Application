@@ -35,4 +35,9 @@ public class IntroController {
         WindowManager.stageLoad("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab4/lab4-view.fxml", "Эффективное кодирование без потерь");
     }
 
+    @FXML
+    protected void onLab5ButtonClick(){
+        WindowManager.stageLoad("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab5/lab5-view.fxml", "Алгоритм сжатия JPEG");
+    }
+
 }

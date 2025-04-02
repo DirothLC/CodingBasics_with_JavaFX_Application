@@ -18,7 +18,7 @@
           <Label fx:id="welcomeText" layoutX="20.0" layoutY="143.0" />
       <Button layoutX="60.0" layoutY="124.0" onAction="#onLab3ButtonClick" prefHeight="26.0" prefWidth="70.0" text="Lab 3" />
       <Button layoutX="212.0" layoutY="47.0" onAction="#onLab4ButtonClick" prefHeight="26.0" prefWidth="70.0" text="Lab 4" />
-      <Button layoutX="212.0" layoutY="85.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Lab 5" />
+      <Button layoutX="212.0" layoutY="85.0" onAction="#onLab5ButtonClick" prefHeight="26.0" prefWidth="70.0" text="Lab 5" />
       <Button layoutX="212.0" layoutY="124.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Lab 6" />
    </children>
 </AnchorPane>
