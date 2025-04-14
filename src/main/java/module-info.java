@@ -10,6 +10,7 @@ module kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject {
     requires eu.hansolo.tilesfx;
     requires commons.math3;
     requires com.github.psambit9791.jdsp;
+    requires java.desktop;
 
 
     exports kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.app;

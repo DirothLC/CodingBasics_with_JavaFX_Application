@@ -1,15 +1,20 @@
 package kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab5;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab5.JPEGLib;
+
+import javafx.scene.image.Image;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Lab5Controller {
     @FXML
@@ -25,16 +30,22 @@ public class Lab5Controller {
     private Button chooseSaveFolderButton;
 
     @FXML
-    private RadioButton codingMark;
+    private RadioButton compressButton;
     @FXML
-    private RadioButton decodingMark;
+    private RadioButton decompressButton;
+
     @FXML
-    private RadioButton txtFormatMark;
+    private Slider compressionForce;
+
     @FXML
-    private RadioButton logFormatMark;
+    private ImageView inputImage;
+    @FXML
+    private ImageView outputImage;
 
     @FXML
     private TextArea outputArea;
+
+
 
 
     @FXML
@@ -44,14 +55,57 @@ public class Lab5Controller {
     }
 
     @FXML
+    private void onRunButtonClick() {
+        if (fileName.getText().isEmpty() || filePath.getText().isEmpty() || folderPath.getText().isEmpty()) {
+            outputArea.setText("Заполните все поля!");
+            return;
+        }
+        if (compressButton.isSelected()) {
+            try {
+                JPEGLib.convertWithQuality(filePath.getText(), folderPath.getText() + "/" + fileName.getText(), (float) compressionForce.getValue());
+                File outputFile = new File(folderPath.getText(), fileName.getText() + ".jpg");
+                outputImage.setImage(
+                        new Image(outputFile.toURI().toString())
+                );
+                outputArea.setText("Сжатие выполнено успешно! \n Размер исходного файла: " + new File(filePath.getText()).length() +
+                        "Размер сжатого файла: " + outputFile.length() +
+                        "Качество: " + compressionForce.getValue() + "%");
+            } catch (IOException e) {
+                System.err.println("Error: " + e.getMessage());
+            }
+        } else if (decompressButton.isSelected()) {
+            try {
+                JPEGLib.restoreToPNG(filePath.getText(), folderPath.getText() + "/" + fileName.getText());
+                File outputFile = new File(folderPath.getText(), fileName.getText() + ".png");
+                outputImage.setImage(
+                        new Image(outputFile.toURI().toString())
+                );
+                outputArea.setText("Восстановление выполнено успешно! \n Размер исходного файла: " + new File(filePath.getText()).length() +
+                        "Размер восстановленного файла: " + outputFile.length());
+            } catch (IOException e) {
+                System.err.println("Error: " + e.getMessage());
+            }
+        }
+    }
+
+    @FXML
+    private void onCompressButtonClick() {
+        compressionForce.setVisible(true);
+    }
+
+    @FXML
+    private void onDecompressButtonClick() {
+        compressionForce.setVisible(false);
+    }
+
+    @FXML
     private void onFileChooseButtonClick() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Выберите файл");
         fileChooser.setInitialDirectory(new File("src/main/resources/static/working_with_files").getAbsoluteFile());
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Text Files (*.txt)", "*.txt"),
-                new FileChooser.ExtensionFilter("Log Files (*.log)", "*.log"),
-                new FileChooser.ExtensionFilter("Binary Files (*.bin)", "*.bin")
+                new FileChooser.ExtensionFilter("Image Files (*.png)", "*.png"),
+                new FileChooser.ExtensionFilter("Image Files (*.jpg)", "*.jpg")
         );
 
         Stage stage = (Stage) chooseFileButton.getScene().getWindow();
@@ -59,6 +113,7 @@ public class Lab5Controller {
         File selectedFile = fileChooser.showOpenDialog(stage);
         if (selectedFile != null) {
             filePath.setText(selectedFile.getAbsolutePath());
+            inputImage.setImage(new javafx.scene.image.Image(selectedFile.toURI().toString()));
         } else {
             System.out.println("File selection cancelled.");
         }
