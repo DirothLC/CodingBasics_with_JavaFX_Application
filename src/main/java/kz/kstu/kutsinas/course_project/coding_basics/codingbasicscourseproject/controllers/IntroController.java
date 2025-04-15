@@ -17,7 +17,7 @@ public class IntroController {
 
     @FXML
     protected void onLab1ButtonClick() {
-        welcomeText.setText("Данные по данной лабе отсутствуют");
+        WindowManager.stageLoad("/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab1/lab1-view.fxml", "Эффективность кодирования");
     }
     @FXML
     protected void onLab2ButtonClick() {

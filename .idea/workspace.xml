@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="Preparation of the structure of the project for Lab5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab4/JPEGLib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab5/HuffmanNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab5/JPEGAlgorithm.java" afterDir="false" />
+    <list default="true" id="b3092745-369b-46b5-a7a8-90d7579642de" name="Changes" comment="added lab5 logic&#10;JPEG algorithm done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/lab1/Lab1Logic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab1/Lab1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab1/lab1-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab5/Lab5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/lab5/Lab5Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/Formulas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/algorithms/Formulas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/controllers/IntroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab5/lab5-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kz/kstu/kutsinas/course_project/coding_basics/codingbasicscourseproject/views/lab5/lab5-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +101,7 @@
       <recent name="C:\Users\Господин\Desktop\ОК\Kutsinas Darius course project\src\main\resources\kz\kstu\kutsinas\course_project\coding_basics\codingbasicscourseproject\views" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab5" />
       <recent name="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab4" />
       <recent name="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.algorithms.lab2" />
       <recent name="kz.kstu.kutsinas.course_project.coding_basics.codingbasicscourseproject.controllers.lab2" />
@@ -183,7 +183,8 @@
       <workItem from="1744219485638" duration="375000" />
       <workItem from="1744345518184" duration="3776000" />
       <workItem from="1744560839335" duration="4825000" />
-      <workItem from="1744626207924" duration="502000" />
+      <workItem from="1744626207924" duration="1397000" />
+      <workItem from="1744716981746" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="Add Lab 2 tasks view and enhance navigation&#10;&#10;Introduced a new Lab 2 tasks view with corresponding buttons and updated navigation via the IntroController.">
       <option name="closed" value="true" />
@@ -321,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743587080199</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added lab5 logic&#10;JPEG algorithm done">
+      <option name="closed" value="true" />
+      <created>1744627472046</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1744627472047</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +365,8 @@
     <MESSAGE value="RLE algorithm refactored&#10;Lab 4 developed" />
     <MESSAGE value="Editing in the RLE algorithm, the work of the program is adjusted" />
     <MESSAGE value="Preparation of the structure of the project for Lab5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation of the structure of the project for Lab5" />
+    <MESSAGE value="added lab5 logic&#10;JPEG algorithm done" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lab5 logic&#10;JPEG algorithm done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
